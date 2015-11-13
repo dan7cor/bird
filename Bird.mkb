@@ -1,0 +1,21 @@
+#!/usr/bin/env mkb
+files
+{
+    Bird.cpp
+	input.h
+	input.cpp
+}
+
+subprojects
+{
+    iwutil
+    iw2dscenegraphcore
+    iw2dscenegraph
+    iwgx
+    iwresmanager
+    iwtween
+}
+
+deployment
+{
+}
