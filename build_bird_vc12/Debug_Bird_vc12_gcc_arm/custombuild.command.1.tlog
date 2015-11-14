@@ -1,0 +1,2 @@
+^C:\USERS\DANIEL\DOCUMENTS\BIRD\BIRD.MKB
+"E:\7.10\s3e\python\python.exe" "E:\7.10\s3e\makefile_builder\mkb.py" "c:/Users/Daniel/Documents/Bird/Bird.mkb" "--buildenv=VC12" "--default-buildenv=vc12" --msvc-project
