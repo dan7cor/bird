@@ -1,0 +1,5 @@
+build ""
+outdir "c:/Users/Daniel/Documents/Bird/build_bird_vc12"
+!config !name "Default"
+!config <os>
+configlist "Default",

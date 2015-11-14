@@ -1,0 +1,441 @@
+# 1 "C:/Users/Daniel/Documents/Bird/input.cpp"
+# 1 "C:\\Users\\Daniel\\Documents\\Bird\\build_bird_vc12//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "c:/Users/Daniel/Documents/Bird/build_bird_vc12/temp_defines_debug.h" 1
+# 1 "<command-line>" 2
+# 1 "C:/Users/Daniel/Documents/Bird/input.cpp"
+
+
+# 1 "C:/Users/Daniel/Documents/Bird/input.h" 1
+
+
+
+
+
+# 1 "e:/7.10/s3e/h/s3ePointer.h" 1
+# 15 "e:/7.10/s3e/h/s3ePointer.h"
+# 1 "e:/7.10/s3e/h/s3eTypes.h" 1
+# 35 "e:/7.10/s3e/h/s3eTypes.h"
+typedef unsigned char s3e_uint8_t;
+typedef signed char s3e_int8_t;
+typedef unsigned short int s3e_uint16_t;
+typedef signed short int s3e_int16_t;
+typedef unsigned int s3e_uint32_t;
+typedef signed int s3e_int32_t;
+# 55 "e:/7.10/s3e/h/s3eTypes.h"
+        typedef unsigned long long s3e_uint64_t;
+        typedef signed long long s3e_int64_t;
+
+
+
+
+
+
+
+typedef unsigned long s3e_size_t;
+typedef signed long s3e_ssize_t;
+# 85 "e:/7.10/s3e/h/s3eTypes.h"
+typedef s3e_uint64_t uint64_t;
+typedef s3e_int64_t int64_t;
+typedef s3e_uint32_t uint32_t;
+typedef s3e_int32_t int32_t;
+typedef s3e_uint16_t uint16_t;
+typedef s3e_int16_t int16_t;
+typedef s3e_uint8_t uint8_t;
+typedef s3e_int8_t int8_t;
+# 104 "e:/7.10/s3e/h/s3eTypes.h"
+    typedef long int intptr_t;
+    typedef unsigned long int uintptr_t;
+# 153 "e:/7.10/s3e/h/s3eTypes.h"
+typedef unsigned int uint;
+typedef unsigned short int ushort;
+typedef unsigned long int ulong;
+typedef unsigned char uint8;
+typedef signed char int8;
+
+
+typedef int64_t int64;
+typedef uint64_t uint64;
+
+
+
+
+typedef unsigned int uint32;
+
+
+
+
+
+
+typedef signed int int32;
+
+
+
+
+
+
+typedef uint16_t uint16;
+
+
+
+
+typedef int16_t int16;
+# 266 "e:/7.10/s3e/h/s3eTypes.h"
+typedef enum s3eResult
+{
+    S3E_RESULT_SUCCESS = 0,
+    S3E_RESULT_ERROR = 1
+} s3eResult;
+
+
+
+
+typedef uint8 s3eBool;
+# 284 "e:/7.10/s3e/h/s3eTypes.h"
+typedef wchar_t s3eWChar;
+# 296 "e:/7.10/s3e/h/s3eTypes.h"
+typedef int32 (*s3eCallback) (void* systemData, void* userData);
+# 16 "e:/7.10/s3e/h/s3ePointer.h" 2
+# 57 "e:/7.10/s3e/h/s3ePointer.h"
+typedef enum s3ePointerType
+{
+    S3E_POINTER_TYPE_INVALID = 0,
+    S3E_POINTER_TYPE_MOUSE = 1,
+    S3E_POINTER_TYPE_STYLUS = 2
+} s3ePointerType;
+
+
+
+
+
+
+
+typedef enum s3eStylusType
+{
+    S3E_STYLUS_TYPE_INVALID = 0,
+    S3E_STYLUS_TYPE_STYLUS = 1,
+    S3E_STYLUS_TYPE_FINGER = 2
+} s3eStylusType;
+# 88 "e:/7.10/s3e/h/s3ePointer.h"
+typedef enum s3ePointerProperty
+{
+
+
+
+    S3E_POINTER_AVAILABLE = 0,
+
+
+
+
+
+
+    S3E_POINTER_HIDE_CURSOR = 1,
+
+
+
+
+    S3E_POINTER_TYPE = 2,
+
+
+
+
+    S3E_POINTER_STYLUS_TYPE = 3,
+
+
+
+
+    S3E_POINTER_MULTI_TOUCH_AVAILABLE = 4,
+
+
+
+
+
+
+
+    S3E_POINTER_VIRTUAL_TRANSFORM = 5,
+
+
+
+
+    S3E_POINTER_VIRTUAL_ROTATION = 6,
+
+
+
+
+    S3E_POINTER_VIRTUAL_LEFT = 7,
+
+
+
+
+    S3E_POINTER_VIRTUAL_TOP = 8,
+
+
+
+
+    S3E_POINTER_VIRTUAL_WIDTH = 9,
+
+
+
+
+    S3E_POINTER_VIRTUAL_HEIGHT = 10,
+
+
+
+
+
+    S3E_POINTER_VIRTUAL_SCALE_X = 11,
+
+
+
+
+
+    S3E_POINTER_VIRTUAL_SCALE_Y = 12
+
+} s3ePointerProperty;
+# 176 "e:/7.10/s3e/h/s3ePointer.h"
+extern "C" int32 s3ePointerGetInt(s3ePointerProperty property);
+# 193 "e:/7.10/s3e/h/s3ePointer.h"
+extern "C" s3eResult s3ePointerSetInt(s3ePointerProperty property, int32 value);
+# 202 "e:/7.10/s3e/h/s3ePointer.h"
+typedef enum s3ePointerCallback
+{
+# 215 "e:/7.10/s3e/h/s3ePointer.h"
+    S3E_POINTER_BUTTON_EVENT,
+# 228 "e:/7.10/s3e/h/s3ePointer.h"
+    S3E_POINTER_MOTION_EVENT,
+# 239 "e:/7.10/s3e/h/s3ePointer.h"
+    S3E_POINTER_TOUCH_EVENT,
+# 250 "e:/7.10/s3e/h/s3ePointer.h"
+    S3E_POINTER_TOUCH_MOTION_EVENT,
+# 265 "e:/7.10/s3e/h/s3ePointer.h"
+    S3E_POINTER_WHEEL_CHANGED_EVENT,
+
+    S3E_POINTER_CALLBACK_MAX
+} s3ePointerCallback;
+# 290 "e:/7.10/s3e/h/s3ePointer.h"
+extern "C" s3eResult s3ePointerRegister(s3ePointerCallback cbid, s3eCallback fn, void* userData);
+# 307 "e:/7.10/s3e/h/s3ePointer.h"
+extern "C" s3eResult s3ePointerUnRegister(s3ePointerCallback cbid, s3eCallback fn);
+# 316 "e:/7.10/s3e/h/s3ePointer.h"
+typedef enum s3ePointerError
+{
+    S3E_POINTER_ERR_NONE = 0,
+    S3E_POINTER_ERR_PARAM = 1,
+    S3E_POINTER_ERR_TOO_MANY = 2,
+    S3E_POINTER_ERR_ALREADY_REG = 3,
+    S3E_POINTER_ERR_NOT_FOUND = 4,
+    S3E_POINTER_ERR_UNAVAIL = 5
+} s3ePointerError;
+
+
+
+
+
+
+
+extern "C" s3ePointerError s3ePointerGetError();
+
+
+
+
+
+
+
+extern "C" const char* s3ePointerGetErrorString();
+
+
+
+
+
+
+typedef enum s3ePointerState
+{
+    S3E_POINTER_STATE_UP = 0,
+    S3E_POINTER_STATE_DOWN = 1,
+    S3E_POINTER_STATE_PRESSED = 2,
+    S3E_POINTER_STATE_RELEASED = 4,
+    S3E_POINTER_STATE_UNKNOWN
+} s3ePointerState;
+
+
+
+
+
+
+typedef enum s3ePointerButton
+{
+
+    S3E_POINTER_BUTTON_SELECT = 0,
+
+
+    S3E_POINTER_BUTTON_LEFTMOUSE = 0,
+
+
+    S3E_POINTER_BUTTON_RIGHTMOUSE = 1,
+
+
+    S3E_POINTER_BUTTON_MIDDLEMOUSE = 2,
+
+
+    S3E_POINTER_BUTTON_MOUSEWHEELUP = 3,
+
+
+    S3E_POINTER_BUTTON_MOUSEWHEELDOWN = 4,
+
+
+    S3E_POINTER_BUTTON_MAX
+} s3ePointerButton;
+
+
+
+
+typedef struct s3ePointerEvent
+{
+
+    s3ePointerButton m_Button;
+
+    uint32 m_Pressed;
+
+    int32 m_x;
+
+    int32 m_y;
+} s3ePointerEvent;
+
+
+
+
+typedef struct s3ePointerMotionEvent
+{
+
+    int32 m_x;
+
+    int32 m_y;
+} s3ePointerMotionEvent;
+
+
+
+
+typedef struct s3ePointerTouchEvent
+{
+
+
+
+
+
+    uint32 m_TouchID;
+
+    uint32 m_Pressed;
+
+    int32 m_x;
+
+    int32 m_y;
+} s3ePointerTouchEvent;
+
+
+
+
+typedef struct s3ePointerTouchMotionEvent
+{
+
+
+
+
+
+    uint32 m_TouchID;
+
+    int32 m_x;
+
+    int32 m_y;
+} s3ePointerTouchMotionEvent;
+# 454 "e:/7.10/s3e/h/s3ePointer.h"
+typedef struct s3ePointerWheelChangedEvent
+{
+
+    int32 m_WheelDelta;
+} s3ePointerWheelChangedEvent;
+
+
+
+
+
+
+extern "C" s3ePointerState s3ePointerGetState(s3ePointerButton button);
+
+
+
+
+
+
+extern "C" int32 s3ePointerGetX();
+
+
+
+
+
+
+extern "C" int32 s3ePointerGetY();
+# 490 "e:/7.10/s3e/h/s3ePointer.h"
+extern "C" s3ePointerState s3ePointerGetTouchState(uint32 touchID);
+# 502 "e:/7.10/s3e/h/s3ePointer.h"
+extern "C" int32 s3ePointerGetTouchX(uint32 touchID);
+# 514 "e:/7.10/s3e/h/s3ePointer.h"
+extern "C" int32 s3ePointerGetTouchY(uint32 touchID);
+
+
+
+
+
+
+
+extern "C" s3eResult s3ePointerUpdate();
+# 7 "C:/Users/Daniel/Documents/Bird/input.h" 2
+
+class Input{
+public:
+ int m_x, m_y;
+ bool m_Touch, m_PrevTouch;
+
+ Input();
+
+
+ static void TouchButtonCB(s3ePointerEvent* event);
+
+
+ void Update(){
+  s3ePointerUpdate();
+ };
+
+ void Reset();
+private:
+
+};
+
+extern Input* gpInput;
+# 4 "C:/Users/Daniel/Documents/Bird/input.cpp" 2
+
+Input* gpInput = 0;
+
+void Input::TouchButtonCB(s3ePointerEvent* event){
+ gpInput->m_PrevTouch = gpInput->m_Touch;
+ gpInput->m_Touch = event->m_Pressed != 0;
+ gpInput->m_x = event->m_x;
+ gpInput->m_y = event->m_y;
+
+
+}
+# 23 "C:/Users/Daniel/Documents/Bird/input.cpp"
+Input::Input() :m_PrevTouch(false), m_Touch(false){
+ int32 pointerType = s3ePointerGetInt(S3E_POINTER_TYPE);
+ if (pointerType == S3E_POINTER_TYPE_MOUSE)
+ {
+
+  s3ePointerRegister(S3E_POINTER_TOUCH_EVENT, (s3eCallback)TouchButtonCB, __null);
+
+ }
+}
+
+void Input::Reset(){
+ m_PrevTouch = false;
+ m_Touch = false;
+}

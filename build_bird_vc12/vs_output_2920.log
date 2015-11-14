@@ -1,0 +1,6 @@
+1>------ Operaci¢n Compilar iniciada: proyecto: Bird_vc12, configuraci¢n: x86 Debug Win32 ------
+1>  Bird_vc12.vcxproj -> c:\Users\Daniel\Documents\Bird\build_bird_vc12\Debug_Bird_vc12_x86\Bird.s86
+1>  E:\7.10\s3e\python\python.exe .\process_map.py "c:\Users\Daniel\Documents\Bird\build_bird_vc12\Debug_Bird_vc12_x86\Bird.s86"
+1>  "s3e_plink" -l "c:\Users\Daniel\Documents\Bird\build_bird_vc12\Debug_Bird_vc12_x86\Bird.s86" 
+========== Compilar: 1 correctos, 0 incorrectos, 0 actualizados, 0 omitidos ==========
+
