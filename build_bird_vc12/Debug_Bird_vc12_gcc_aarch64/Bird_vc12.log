@@ -1,0 +1,28 @@
+﻿Compilación iniciada a las 10/31/2015 12:40:17 PM.
+     1>Proyecto "C:\Users\Daniel\Documents\Bird\build_bird_vc12\Bird_vc12.vcxproj" en el nodo 2 (Build destinos).
+     1>ClCompile:
+         E:\7.10\s3e\bin\CL.exe /c /Ie:/7.10/extensions/s3eamazonads/h /Ie:/7.10/modules/iwutil/h /Ie:/7.10/modules/third_party/libjpeg/h /Ie:/7.10/modules/third_party/zlib/h /Ie:/7.10/modules/third_party/libpng/h /Ie:/7.10/modules/iw2dscenegraphcore/h /Ie:/7.10/modules/iw2dscenegraph/h /Ie:/7.10/modules/iw2d/h /Ie:/7.10/modules/iwgx/h /Ie:/7.10/modules/iwgl/h /Ie:/7.10/modules/iwgeom/h /Ie:/7.10/modules/iwresmanager/h /Ie:/7.10/extensions/pvrtextool/h /Ie:/7.10/modules/iwgxfont/h /Ie:/7.10/modules/third_party/tiniconv/source /Ie:/7.10/modules/iwtween/h /Ie:/7.10/s3e/h /Ie:/7.10/s3e/h/ext /Ie:/7.10/s3e/h/std /Ie:/7.10/s3e/h/std/c++ /Ie:/7.10/s3e/h/ext_legacy /Ie:/7.10/s3e/h/legacy /I. /Z7 /nologo /W3 /WX- /MP /Od /Oy- /X /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug_Bird_vc12_gcc_aarch64\\" /Fd"Debug_Bird_vc12_gcc_aarch64\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /S3Eproject /J /Fe"s3e-custom-tool='e:/7.10/s3e/gcc/win32/aarch64/bin/aarch64-none-elf-gcc.exe' tooltype=gcc_aarch64_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -ffixed-x18 -save-temps -ffunction-sections -march=armv8-a -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-frtti --cppflag=-nostdinc++ -g -O0 -gdwarf-2" /FD  /FI"c:\Users\Daniel\Documents\Bird\build_bird_vc12\temp_defines_debug.h" ..\Bird.cpp ..\input.cpp
+         AARCH64 Compiling(GCC) C:\Users\Daniel\Documents\Bird\Bird.cpp ...
+         AARCH64 Compiling(GCC) C:\Users\Daniel\Documents\Bird\input.cpp ...
+       Link:
+         E:\7.10\s3e\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug_Bird_vc12_gcc_aarch64\Bird.s3e" /INCREMENTAL /NOLOGO /LIBPATH:"e:/7.10/modules/iwutil/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/third_party/libjpeg/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/third_party/zlib/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/third_party/libpng/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/iw2d/lib/aarch64/v8-a/simd" /LIBPATH:e:/7.10/modules/iwgx/atitools /LIBPATH:"e:/7.10/modules/iwgx/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/iwgl/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/iwgeom/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/iwresmanager/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/iwgxfont/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/modules/third_party/tiniconv/lib/aarch64/v8-a/simd" /LIBPATH:"e:/7.10/s3e/lib/aarch64/v8-a/simd" /NODEFAULTLIB:libcmt /MANIFEST:NO /PDB:"Debug_Bird_vc12_gcc_aarch64\Bird.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug_Bird_vc12_gcc_aarch64\Bird.lib" /MACHINE:X86  /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='e:/7.10/s3e/gcc/win32/aarch64/bin/aarch64-none-elf-g++.exe' tooltype=gcc_aarch64_linker -Wl,--gc-sections -Wl,--as-needed -march=armv8-a -frtti -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Taarch64_linker_script -lc -lm -Wl,-Map='Debug_Bird_vc12_gcc_aarch64\/Bird.map' -Wl,--start-group -liwutil_d -ljpeg_d -lz_d -lpng_d -liw2d_d -liwgx_d -liwgl_d -liwgeom_d -liwresmanager_d -liwgxfont_d -ltiniconv_d -ls3e_cpp_d -ls3e_d -ls3e_api_iwgl -Wl,--end-group --plink:--arch=armv8-a --plink:--compiler=rvct --plink:-u" /DLL Debug_Bird_vc12_gcc_aarch64\Bird.obj
+         Debug_Bird_vc12_gcc_aarch64\Iw2DSceneGraph.obj
+         Debug_Bird_vc12_gcc_aarch64\Iw2DSceneGraphCore.obj
+         Debug_Bird_vc12_gcc_aarch64\IwTween.obj
+         Debug_Bird_vc12_gcc_aarch64\PVRTexTool_interface.obj
+         Debug_Bird_vc12_gcc_aarch64\input.obj
+         Debug_Bird_vc12_gcc_aarch64\s3eAmazonAds_interface.obj
+         AARCH64 Linking(GCC) ...
+         Bird_vc12.vcxproj -> C:\Users\Daniel\Documents\Bird\build_bird_vc12\Debug_Bird_vc12_gcc_aarch64\Bird.s3e
+       PostBuildEvent:
+         echo E:\7.10\s3e\python\python.exe .\process_map.py "C:\Users\Daniel\Documents\Bird\build_bird_vc12\Debug_Bird_vc12_gcc_aarch64\Bird.s3e"
+         chdir /d "e:\7.10\s3e\tools"
+         E:\7.10\s3e\python\python.exe .\process_map.py "C:\Users\Daniel\Documents\Bird\build_bird_vc12\Debug_Bird_vc12_gcc_aarch64\Bird.s3e"
+         
+         :VCEnd
+         E:\7.10\s3e\python\python.exe .\process_map.py "C:\Users\Daniel\Documents\Bird\build_bird_vc12\Debug_Bird_vc12_gcc_aarch64\Bird.s3e"
+     1>Compilación del proyecto terminada "C:\Users\Daniel\Documents\Bird\build_bird_vc12\Bird_vc12.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:02.14
